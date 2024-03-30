@@ -28,7 +28,7 @@ function App() {
         lg: '200px 1fr'
       }}
     >
-      <GridItem area='nav' style={{ position: 'sticky', width: '100%', top: 0, zIndex: 2 , backgroundColor:'white', boxShadow:"0px 4px 6px rgba(0, 0, 0, 0.1)"}}>   
+      <GridItem area='nav' style={{ position: 'sticky', width: '100%', top: 0, zIndex: 2 , boxShadow:"0px 4px 6px rgba(0, 0, 0, 0.1)"}}>   
           <Navbar onSearch={(searchText) => setGameQuery({...gameQuery, searchText})} /> 
       </GridItem>
       <Show above='lg'>
@@ -43,7 +43,7 @@ function App() {
           </Box>
         </GridItem>
       </Show>
-      <GridItem area={'main'} >
+      <GridItem area={'main'}>
         <Box paddingLeft={2}>
           <GameHeading gameQuery={gameQuery} />
           <HStack spacing={5} marginBottom={5}>
